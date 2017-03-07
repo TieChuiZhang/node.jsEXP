@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	div#alert.alert.alert-donger this is an error message
+	div.alert.alert-success
+		| this is caonima 
+		| this is caonima 
+		| this is caonima 
+		| this is caonima
+		// sdasda
+
+	a.btn.btn-primary(href="http://www.baidu.com", target="_blank") baidu.com
+
+
+	-	var name = '111'
+
+	if name === '111'
+			p is 111
+	else
+			p is 1111
+	- var list = ['abc','def'];
+
+
+	ul 
+		each value in list
+			li= value
+block scripts
+	script $(document).ready(function(){ console.log('成功了吗?????');});
